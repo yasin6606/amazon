@@ -2,7 +2,74 @@ import React from "react";
 
 const Home = (): JSX.Element => {
     return <>
-        main home page
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
     </>;
 };
 

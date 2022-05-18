@@ -1,14 +1,14 @@
 import {lazy} from "react";
 import RouteInterface from "Assets/Interfaces/Route";
 
-const Layout = lazy(() => import("Pages/Index"));
+const Main = lazy(() => import("Pages/Main/Main"));
 const Home = lazy(() => import("Pages/Home/Home"));
 
 const RoutesList: RouteInterface[] = [
     {
-        // Main Page (Home Page)
+        // Main Page
         path: "/",
-        element: <Layout/>,
+        element: <Main/>,
         redirect: "/",
         caseSensitive: false,
         needAuthenticating: false,
