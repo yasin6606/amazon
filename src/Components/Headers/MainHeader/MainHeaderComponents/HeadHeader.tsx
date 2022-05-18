@@ -12,13 +12,13 @@ const HeadHeader = (): JSX.Element => {
         <div className="flex items-center bg-slate-900">
             <div className="px-3">
                 <Link to="/">
-                    <img src={amazonIcon} alt="amazon_icon" className="h-12"/>
+                    <img src={amazonIcon} alt="amazon_icon" className="object-scale-down h-16"/>
                 </Link>
             </div>
             <div className="px-3">
                 <SelectCountry/>
             </div>
-            <div className="flex-1">
+            <div className="flex-1 px-3">
                 <SearchBar/>
             </div>
             <div className="px-3">
