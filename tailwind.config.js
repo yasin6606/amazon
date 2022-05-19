@@ -7,6 +7,7 @@ module.exports = {
         "./src/Components/**/**/**/*.{js,jsx,ts,tsx}",
         "./src/Pages/**/*.{js,jsx,ts,tsx}",
     ],
+    important: true,
     settings: {
 
     },

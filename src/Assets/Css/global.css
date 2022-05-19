@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.d-f{
-    display: flex;
-    color: red;
+.bg-dark-sub-nav {
+    background-color: #232f3e;
 }
