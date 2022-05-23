@@ -1,15 +1,16 @@
 import {ReactNode} from "react";
 
 export type ItemsType = {
-    icon?: ReactNode,
+    icon?:ReactNode,
     itemName: string,
-    hasLink?: string
-}
+    hasLink?: string,
+    subGroups?: GroupsType[]
+};
 
 export type GroupsType = {
     key: number,
     title: string,
-    needCollapse: boolean,
+    needCollapse?: boolean,
     items: ItemsType[]
 };
 

@@ -3,9 +3,11 @@ import Drawer from "@mui/material/Drawer";
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import {Link} from "react-router-dom";
-import MenuDrawerContent from "Components/Common/MenuDrawer/MenuDrawerContent";
-import ItemContent from "Components/Common/MenuDrawer/ItemContent";
-import {State, Anchor, ItemSelection, ItemSelectionType} from "Assets/Types/GeneralTypes";
+import MenuDrawerGroup from "Components/Common/MenuDrawer/MenuDrawerGroup";
+import {State, Anchor, ItemSelection, ItemSelectionType, GroupsType} from "Assets/Types/GeneralTypes";
+import LanguageIcon from "@mui/icons-material/Language";
+import usaFlag from "Assets/Icons/united-states-of-america.svg";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const MenuDrawer = (): JSX.Element => {
 
@@ -14,7 +16,7 @@ const MenuDrawer = (): JSX.Element => {
         left: false,
         bottom: false,
         right: false,
-        itemSelection: 0
+        itemSelection: null
     });
 
     const itemSelectionHandler: ItemSelectionType = (item: ItemSelection): void => {
@@ -35,6 +37,120 @@ const MenuDrawer = (): JSX.Element => {
         };
 
     const anchor = "left";
+
+    const groups: GroupsType[] = [
+        {
+            key: 0,
+            title: "Digital Content & Devices",
+            items: [
+                {
+                    itemName: "amazon music",
+                    subGroups: [
+                        {
+                            key: 0,
+                            title: "stream music",
+                            items: [
+                                {
+                                    itemName: "amazon music unlimited",
+                                    hasLink: "/"
+                                },
+                                {
+                                    itemName: "free streaming music",
+                                    hasLink: "/"
+                                },
+                                {
+                                    itemName: "podcasts",
+                                    hasLink: "/"
+                                },
+                                {
+                                    itemName: "open web player",
+                                    hasLink: "/"
+                                },
+                                {
+                                    itemName: "download the app",
+                                    hasLink: "/"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {itemName: "Kindle E-readers & Books"},
+                {itemName: "Appstore for Android"}
+            ]
+        },
+        {
+            key: 1,
+            needCollapse: true,
+            title: "Shop By Department",
+            items: [
+                {itemName: "Electronics"},
+                {itemName: "computers"},
+                {itemName: "smart home"},
+                {itemName: "arts & crafts"},
+                {itemName: "automotive"},
+                {itemName: "baby"},
+                {itemName: "beauty and personal care"},
+                {itemName: "women's fashion"},
+                {itemName: "men's fashion"},
+                {itemName: "girls' fashion"},
+                {itemName: "boys' fashion"},
+                {itemName: "health and household"},
+                {itemName: "home and kitchen"},
+                {itemName: "industrial and scientific"},
+                {itemName: "luggage"},
+                {itemName: "movies & television"},
+                {itemName: "pet supplies"},
+                {itemName: "software"},
+                {itemName: "sports and outdoors"},
+                {itemName: "tools & home improvement"},
+                {itemName: "toys and games"},
+                {itemName: "video games"}
+            ]
+        },
+        {
+            key: 2,
+            needCollapse: true,
+            title: "Programs & Features",
+            items: [
+                {itemName: "gift cards"},
+                {hasLink: "/", itemName: "#FoundOnAmazon"},
+                {itemName: "amazon live"},
+                {itemName: "international shopping"},
+                {itemName: "amazon second chance"}
+            ]
+        },
+        {
+            key: 3,
+            title: "Help & Settings",
+            items: [
+                {hasLink: "/", itemName: "your account"},
+                {hasLink: "/", icon: <LanguageIcon/>, itemName: "english"},
+                {hasLink: "/", icon: <img src={usaFlag} alt="usa_flag" className="h-5"/>, itemName: "united states"},
+                {hasLink: "/", itemName: "customer service"},
+                {hasLink: "/", itemName: "sing in"}
+            ]
+        }
+    ];
+
+    const groupsHandler = (): GroupsType[] | undefined => {
+        if (state.itemSelection) {
+            let subGroup: GroupsType[] | undefined;
+
+            // find subGroup of selected item
+            for (let i = 0; i < groups.length; i++) {
+                subGroup = groups[i].items.find(y => y.itemName === state.itemSelection)?.subGroups;
+
+                if (subGroup)
+                    break;
+            }
+
+            // prevent show (back header part) in top of drawer menu when selected item does not have subGroup
+            if (!subGroup)
+                setState({...state, itemSelection: null});
+
+            return subGroup;
+        }
+    };
 
     return <>
         <div className="flex cursor-pointer" onClick={toggleDrawer(anchor, true)}>
@@ -64,17 +180,18 @@ const MenuDrawer = (): JSX.Element => {
                         </h3>
                     </div>
                 </div>
-                <div className="flex-1 px-5 overflow-auto">
-                    {
-                        state.itemSelection
-                            ?
-                            <ItemContent
-                                itemSelected={state.itemSelection}
-                                itemSelection={itemSelectionHandler}
-                            />
-                            :
-                            <MenuDrawerContent itemSelection={itemSelectionHandler}/>
-                    }
+                {
+                    state.itemSelection && <div className="flex border-b px-5 py-3 cursor-pointer">
+                        <div className="pr-2">
+                            <ArrowBackIcon onClick={() => itemSelectionHandler(null)}/>
+                        </div>
+                        <div className="flex-1 flex items-center">
+                            <p className="m-0 uppercase text-xs" onClick={() => itemSelectionHandler(null)}>main menu</p>
+                        </div>
+                    </div>
+                }
+                <div className="flex-1 overflow-auto">
+                    <MenuDrawerGroup groups={groupsHandler() || groups} toggleItemSelector={itemSelectionHandler}/>
                 </div>
             </div>
         </Drawer>
@@ -82,3 +199,8 @@ const MenuDrawer = (): JSX.Element => {
 };
 
 export default MenuDrawer;
+
+// <ItemContent
+//     itemSelected={state.itemSelection}
+//     toggleItemSelector={itemSelectionHandler}
+// />
