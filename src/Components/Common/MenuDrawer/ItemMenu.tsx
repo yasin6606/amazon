@@ -14,7 +14,15 @@ const ItemMenu = (props: { item: ItemsType, toggleItemSelector?: any }): JSX.Ele
             onClick={select}
         >
             <div className={props.item.icon ? "pr-2" : "hidden"}>
-                {props.item.icon}
+                {
+                    props.item.icon ?
+                        typeof props.item.icon === "string" ?
+                            <img src={`${props.item.icon}`} alt={props.item.itemName} className="h-5"/>
+                            :
+                            <props.item.icon/>
+                        :
+                        null
+                }
             </div>
             <div className="flex-1">
                 <p className="m-0 capitalize text-[14px]" children={props.item.itemName}/>

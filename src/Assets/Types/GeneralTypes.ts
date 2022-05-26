@@ -1,7 +1,6 @@
-import {ReactNode} from "react";
-
 export type ItemsType = {
-    icon?:ReactNode,
+    // icon?:ReactNode,
+    icon?: any,
     itemName: string,
     hasLink?: string,
     subGroups?: GroupsType[]

@@ -37,21 +37,28 @@ const CollapseComponent = (props: { items: ItemsType[], toggleItemSelector: Item
 };
 
 // The main component that return menus of drawer
-const MenuDrawerGroup = (props: { groups: GroupsType[] | undefined, toggleItemSelector: ItemSelectionType }): JSX.Element => {
-    // console.log(props.groups)
+const MenuDrawerGroup = (props: { groups: GroupsType[] | undefined, isSubGroup: boolean, toggleItemSelector: ItemSelectionType }): JSX.Element => {
     return <>
         {
             props.groups?.map(group =>
-                <div key={group.key} className="flex flex-col border-b px-5">
+                <div key={group.key} className="flex flex-col px-5 border-b last:border-none">
                     <h2 className="font-extrabold py-2" children={group.title}/>
                     {
                         group.items.map((y, i) =>
-                            i < 4 &&
-                            <ItemMenu
-                                key={y.itemName}
-                                item={y}
-                                toggleItemSelector={props.toggleItemSelector}
-                            />
+                            !props.isSubGroup && i < 4
+                                ?
+                                <ItemMenu
+                                    key={y.itemName}
+                                    item={y}
+                                    toggleItemSelector={props.toggleItemSelector}
+                                />
+                                : props.isSubGroup ?
+                                    <ItemMenu
+                                        key={y.itemName}
+                                        item={y}
+                                        toggleItemSelector={props.toggleItemSelector}
+                                    />
+                                    : null
                         )
                     }
                     {
