@@ -10,66 +10,6 @@ const Home = (): JSX.Element => {
         <p>home</p>
         <p>home</p>
         <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
-        <p>home</p>
     </>;
 };
 

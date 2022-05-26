@@ -26,3 +26,10 @@ export type State = {
     right: boolean,
     itemSelection: ItemSelection
 };
+
+export type MainFooterItems = {
+    key: number,
+    header: string,
+    content: string,
+    link: string
+}

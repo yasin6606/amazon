@@ -1,7 +1,7 @@
 import React from "react";
 import {Outlet} from "react-router";
 import MainHeader from "Components/Headers/MainHeader/MainHeader";
-import MainFooter from "../../Components/Footers/MainFooter/MainFooter";
+import Footers from "Components/Footers/Footers";
 
 const Main = (): JSX.Element => {
     return <>
@@ -10,7 +10,7 @@ const Main = (): JSX.Element => {
             <div>
                 <Outlet/>
             </div>
-            <MainFooter/>
+            <Footers/>
         </div>
     </>;
 };

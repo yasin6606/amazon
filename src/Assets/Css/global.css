@@ -5,3 +5,11 @@
 .bg-dark-sub-nav {
     background-color: #232f3e;
 }
+
+.bg-dark-main-footer {
+    background-color: #131A22;
+}
+
+.flex-basis-14{
+    flex-basis: 14.2857% !important;
+}
