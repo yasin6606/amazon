@@ -1,18 +1,18 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import amazonIcon from "Assets/Icons/amazon.svg";
+import {ReactComponent as AmazonIcon} from "Assets/Icons/amazon.svg";
 import SelectCountry from "Components/Common/SelectCountry";
 import SearchBar from "Components/Common/SearchBar";
 import SelectLanguage from "Components/Common/SelectLanguage";
 import Account from "Components/Common/Account";
-import cartIcon from "Assets/Icons/cart.svg";
+import {ReactComponent as CartIcon} from "Assets/Icons/cart.svg";
 
 const HeadHeader = (): JSX.Element => {
     return <>
         <div className="flex items-center bg-slate-900">
             <div className="px-3">
                 <Link to="/">
-                    <img src={amazonIcon} alt="amazon_icon" className="object-scale-down h-16"/>
+                    <AmazonIcon height={50} width={113}/>
                 </Link>
             </div>
             <div className="px-3">
@@ -36,7 +36,7 @@ const HeadHeader = (): JSX.Element => {
             <div className="px-3">
                 <div className="flex">
                     <div>
-                        <img src={cartIcon} alt="cart_icon" className="h-9"/>
+                        <CartIcon height={36} width={38}/>
                     </div>
                     <div className="flex items-end">
                         <p className="m-0 text-white font-extrabold text-xs">Cart</p>

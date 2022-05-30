@@ -1,11 +1,11 @@
 import React from "react";
-import locationIcon from "Assets/Icons/location.svg";
+import {ReactComponent as LocationIcon} from "Assets/Icons/location.svg";
 
 const SelectCountry = (): JSX.Element => {
     return <>
         <div className="flex">
             <div className="flex items-end">
-                <img src={locationIcon} alt="location_pin" className="h-4"/>
+                <LocationIcon height={18} width={15}/>
             </div>
             <div className="flex flex-col">
                 <div>

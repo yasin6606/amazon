@@ -60,11 +60,11 @@ const MenuDrawer = (): JSX.Element => {
 
     return <>
         <div className="flex cursor-pointer" onClick={toggleDrawer(anchor, true)}>
-            <div>
-                <MenuIcon className="text-white"/>
+            <div className="flex items-center">
+                <MenuIcon className="text-white text-[12px] lg:text-[14px]"/>
             </div>
-            <div>
-                <p className="m-0 text-white">All</p>
+            <div className="flex items-center">
+                <p className="m-0 text-[11px] lg:text-[14px] text-white">All</p>
             </div>
         </div>
         <Drawer
@@ -72,7 +72,7 @@ const MenuDrawer = (): JSX.Element => {
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
             PaperProps={{
-                className: "w-1/5"
+                className: "w-1/3 xl:w-1/5"
             }}
         >
             <div className="flex flex-col overflow-hidden">

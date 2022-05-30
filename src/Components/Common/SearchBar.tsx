@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import search from "Assets/Icons/search.svg";
+import {ReactComponent as Search} from "Assets/Icons/search.svg";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -81,8 +81,8 @@ const SearchBar = (): JSX.Element => {
             <div className="flex-1">
                 <input type="search" className="h-10 w-full"/>
             </div>
-            <div>
-                <img src={search} alt="search_icon" className="rounded-r-md bg-orange-300 h-10 px-2"/>
+            <div className="flex rounded-r-md bg-orange-300 px-2">
+                <Search width={30}/>
             </div>
         </div>
     </>;

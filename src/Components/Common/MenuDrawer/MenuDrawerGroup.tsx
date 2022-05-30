@@ -42,7 +42,7 @@ const MenuDrawerGroup = (props: { groups: GroupsType[] | undefined, isSubGroup: 
         {
             props.groups?.map(group =>
                 <div key={group.key} className="flex flex-col px-5 border-b last:border-none">
-                    <h2 className="font-extrabold py-2" children={group.title}/>
+                    <p className="font-extrabold text-[12px] lg:text-[16px] py-2 " children={group.title}/>
                     {
                         group.items.map((y, i) =>
                             !props.isSubGroup && i < 4

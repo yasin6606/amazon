@@ -25,7 +25,7 @@ const ItemMenu = (props: { item: ItemsType, toggleItemSelector?: any }): JSX.Ele
                 }
             </div>
             <div className="flex-1">
-                <p className="m-0 capitalize text-[14px]" children={props.item.itemName}/>
+                <p className="m-0 capitalize text-[11px] lg:text-[14px]" children={props.item.itemName}/>
             </div>
             {
                 !props.item.hasLink && <div>

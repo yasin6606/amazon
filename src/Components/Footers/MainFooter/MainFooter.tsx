@@ -17,7 +17,7 @@ const MainFooter = (): JSX.Element => {
                     )
                 }
             </div>
-            <div className="flex pt-6 justify-evenly w-[55%]">
+            <div className="flex pt-6 justify-evenly lg:w-[55%]">
                 <div>
                     <Link to="">
                         <p className="text-white text-[11px] hover:text-orange-400 capitalize">conditions of use</p>

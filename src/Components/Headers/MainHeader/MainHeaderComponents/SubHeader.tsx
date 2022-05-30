@@ -9,19 +9,19 @@ const SubHeader = (): JSX.Element => {
                 <MenuDrawer/>
             </div>
             <div className="px-4">
-                <Link to="" className="m-0 text-sm hover:text-orange-400">Today's Deals</Link>
+                <Link to="" className="m-0 text-[11px] lg:text-[14px] hover:text-orange-400">Today's Deals</Link>
             </div>
             <div className="px-4">
-                <Link to="" className="m-0 text-sm hover:text-orange-400">Customer Service</Link>
+                <Link to="" className="m-0 text-[11px] lg:text-[14px] hover:text-orange-400">Customer Service</Link>
             </div>
             <div className="px-4">
-                <Link to="" className="m-0 text-sm hover:text-orange-400">Registry</Link>
+                <Link to="" className="m-0 text-[11px] lg:text-[14px] hover:text-orange-400">Registry</Link>
             </div>
             <div className="px-4">
-                <Link to="" className="m-0 text-sm hover:text-orange-400">Gift Cards</Link>
+                <Link to="" className="m-0 text-[11px] lg:text-[14px] hover:text-orange-400">Gift Cards</Link>
             </div>
             <div className="px-4">
-                <Link to="" className="m-0 text-sm hover:text-orange-400">Sell</Link>
+                <Link to="" className="m-0 text-[11px] lg:text-[14px] hover:text-orange-400">Sell</Link>
             </div>
         </div>
     </>;

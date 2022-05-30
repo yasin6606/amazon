@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import usaFlag from "Assets/Icons/united-states-of-america.svg";
+import {ReactComponent as UsaFlag} from "Assets/Icons/united-states-of-america.svg";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const options: any[] = [
@@ -39,7 +39,7 @@ const SelectLanguage = (): JSX.Element => {
         <div>
             <div className="flex cursor-pointer" onMouseEnter={handleClick}>
                 <div>
-                    <img src={usaFlag} alt="usa_flag" className="h-6"/>
+                    <UsaFlag className="h-6"/>
                 </div>
                 <div>
                     <ArrowDropDownIcon className="text-white"/>
