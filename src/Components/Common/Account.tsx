@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Menu from "@mui/material/Menu";
 import {Link} from "react-router-dom";
-import Button from "@mui/material/Button";
+import SignIn from "Components/Common/SignIn";
 
 const Account = (): JSX.Element => {
 
@@ -122,15 +122,8 @@ const Account = (): JSX.Element => {
                 hideBackdrop={false}
             >
                 <div className="flex flex-col px-9 py-2">
-                    <div className="flex flex-col items-center pb-2 border-b">
-                        <div className="w-1/2">
-                            <Button variant="contained" color="warning" className="w-full">Sign in</Button>
-                        </div>
-                        <div>
-                            <p className="m-0 py-2 text-xs text-gray-500">New Customer? <Link to="/"
-                                                                                              className="text-blue-500">start
-                                here.</Link></p>
-                        </div>
+                    <div className="pb-2 border-b">
+                        <SignIn/>
                     </div>
                     <div className="flex pt-2">
                         <div className="pr-10 border-r">
@@ -138,7 +131,8 @@ const Account = (): JSX.Element => {
                             <ul className="list-none">
                                 {
                                     links.leftHand.map(x =>
-                                        <li key={x.key} className="text-sm text-gray-800 pb-1 hover:text-orange-400 hover:underline">
+                                        <li key={x.key}
+                                            className="text-sm text-gray-800 pb-1 hover:text-orange-400 hover:underline">
                                             <Link to={x.link} children={x.title}/>
                                         </li>
                                     )
@@ -150,7 +144,8 @@ const Account = (): JSX.Element => {
                             <ul>
                                 {
                                     links.rightHand.map(x =>
-                                        <li key={x.key} className="text-sm text-gray-800 pb-1 hover:text-orange-400 hover:underline">
+                                        <li key={x.key}
+                                            className="text-sm text-gray-800 pb-1 hover:text-orange-400 hover:underline">
                                             <Link to={x.link} children={x.title}/>
                                         </li>
                                     )
