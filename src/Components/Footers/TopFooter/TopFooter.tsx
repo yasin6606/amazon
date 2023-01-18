@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Radio from "@mui/material/Radio";
+import TopFooterMenu from "Components/Footers/TopFooter/TopFooterMenu";
 
 const TopFooter = (): JSX.Element => {
 
@@ -38,8 +39,8 @@ const TopFooter = (): JSX.Element => {
                 <p className="text-white text-[13px] capitalize flex justify-center py-4 bg-dark-back-btn-top-footer">back
                     to top</p>
             </div>
-            <div>
-
+            <div className="border-b border-zinc-600">
+                <TopFooterMenu/>
             </div>
             <div className="flex justify-center bg-dark-sub-nav py-3">
                 <div className="px-4 flex items-center">
@@ -47,7 +48,8 @@ const TopFooter = (): JSX.Element => {
                 </div>
                 <div className="flex px-4 items-center">
                     <Link to="">
-                        <div className="flex h-fit border rounded py-1 mx-1" onMouseOver={openLanguageMenuHandler}>
+                        <div className="flex h-fit border border-zinc-500 rounded py-1 mx-1"
+                             onMouseOver={openLanguageMenuHandler}>
                             <div className="flex-1 px-1">
                                 <LanguageIcon className="text-white"/>
                             </div>
@@ -90,9 +92,8 @@ const TopFooter = (): JSX.Element => {
                             />
                             <label htmlFor={radioValues.es}>{radioValues.es}</label>
                         </MenuItem>
-                        <MenuItem>3</MenuItem>
                     </Menu>
-                    <div className="h-fit border rounded py-1 mx-1">
+                    <div className="h-fit border border-zinc-500 rounded py-1 mx-1">
                         <Link to="" className="flex">
                             <div className="flex-1 px-2">
                                 <UsaFlag className="h-6"/>

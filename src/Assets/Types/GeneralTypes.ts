@@ -32,4 +32,14 @@ export type MainFooterItems = {
     header: string,
     content: string,
     link: string
-}
+};
+
+export type TopFooterMenuItem = {
+    topic: string,
+    subMenu: {
+        key: number,
+        topic: string,
+        content: string,
+        link: string,
+    }[]
+};
