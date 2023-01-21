@@ -43,3 +43,22 @@ export type TopFooterMenuItem = {
         link: string,
     }[]
 };
+
+export type ImagesHero = {
+    src: string,
+    className: string,
+    alt: string
+}
+
+type HomeCartImgList = {
+    key: number,
+    src: string,
+    alt: string
+}
+
+export type HomeCart = {
+    key: number,
+    header: string,
+    imgList: HomeCartImgList[],
+    link: string
+}

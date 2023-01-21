@@ -5,7 +5,7 @@ import FooterLogin from "Components/Footers/FooterLogin/FooterLogin";
 
 const Footers = (): JSX.Element => {
     return <>
-        <div className="flex flex-col">
+        <div className="flex flex-col z-[1]">
             <div>
                 <FooterLogin/>
             </div>
