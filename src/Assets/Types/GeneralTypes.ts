@@ -53,7 +53,8 @@ export type ImagesHero = {
 type HomeCartImgList = {
     key: number,
     src: string,
-    alt: string
+    alt: string,
+    link?: string
 }
 
 export type HomeCart = {

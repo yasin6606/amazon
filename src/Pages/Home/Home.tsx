@@ -4,7 +4,7 @@ import HomeCarts from "Components/Pages/Home/HomeCarts";
 
 const Home = (): JSX.Element => {
     return <>
-        <div className="bg-[#E3E6E6] flex justify-center">
+        <div className="bg-[#E3E6E6] flex justify-center pb-6">
             <div className="container max:auto flex flex-col">
                 <div className="z-0 flex-1">
                     <HeroShopping/>
