@@ -2,6 +2,7 @@
   "name": "amazon-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yasin6606.github.io/amazon",
   "author": "Yassin Gourkani",
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -16,6 +17,7 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "axios": "^0.27.2",
+    "gh-pages": "^5.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-i18next": "^11.16.9",
