@@ -7,7 +7,7 @@ const HomeCarts = (): JSX.Element => {
         <div className="flex flex-wrap justify-evenly gap-x-1 gap-y-5">
             {
                 cartsData.map(val =>
-                    <Cart item={val}/>
+                    <Cart key={val.key} item={val}/>
                 )
             }
         </div>

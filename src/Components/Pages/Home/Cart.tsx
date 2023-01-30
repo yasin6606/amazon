@@ -3,7 +3,7 @@ import {HomeCart} from "Assets/Types/GeneralTypes";
 
 const Cart = ({item}: { item: HomeCart }): JSX.Element => {
     return <>
-        <div key={item.key} className="flex flex-col justify-between basis-1/5 border rounded bg-[#fff] shadow-md p-2">
+        <div className="flex flex-col justify-between basis-1/5 border rounded bg-[#fff] shadow-md p-2">
             <div>
                 <h2 className="font-bold capitalize">{item.header}</h2>
             </div>

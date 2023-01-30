@@ -9,33 +9,59 @@ import FifthImg from "Assets/Images/HeroPart/fifth.jpg";
 const HeroShopping = (): JSX.Element => {
 
     const [imgList, setImgList] = useState<ImagesHero[]>([]);
+    const [showCart, setShowCart] = useState<number>(0);
+
+    // previous button controlling
+    const prevBtnFunc = () => {
+        setShowCart(prev => {
+            if (prev === 0)
+                return imgList.length - 1;
+
+            return --prev;
+        });
+    };
+
+    // next button controlling
+    const nextBtnFunc = () => {
+        setShowCart(prev => {
+            if (prev === imgList.length - 1)
+                return 0;
+
+            return ++prev;
+        });
+    };
 
     useEffect(() => {
         const imagesList: ImagesHero[] = [
             {
                 src: FirstImg,
                 className: "absolute block w-full",
-                alt: ""
+                alt: "",
+                order: 0
             },
             {
                 src: SecondImg,
                 className: "absolute block w-full",
-                alt: ""
+                alt: "",
+                order: 1
             },
             {
                 src: ThirdImg,
                 className: "absolute block w-full",
-                alt: ""
+                alt: "",
+                order: 2
             },
             {
                 src: FourthImg,
                 className: "absolute block w-full",
-                alt: ""
+                alt: "",
+                order: 3
             },
             {
                 src: FifthImg,
                 className: "absolute block w-full",
-                alt: ""
+                alt: "",
+                order: 4
             }
         ];
 
@@ -44,10 +70,10 @@ const HeroShopping = (): JSX.Element => {
 
     return <>
         <div id="default-carousel" className="relative" data-carousel="static">
-            <div className="relative h-56 rounded-lg md:h-96">
+            <div className="relative h-40 rounded-lg md:h-60">
                 {
                     imgList.map((val, i) =>
-                        <div className="duration-700 ease-in-out" data-carousel-item={i === 0 && "active"}>
+                        <div key={val.src} className={`duration-700 ease-in-out ${showCart !== i && "hidden"}`}>
                             <img src={val.src} className={val.className} alt={val.alt}/>
                         </div>
                     )
@@ -55,7 +81,8 @@ const HeroShopping = (): JSX.Element => {
             </div>
             <button type="button"
                     className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-prev>
+                    onClick={prevBtnFunc}
+            >
                 <span
                     className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
@@ -67,7 +94,8 @@ const HeroShopping = (): JSX.Element => {
             </button>
             <button type="button"
                     className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next>
+                    onClick={nextBtnFunc}
+            >
                 <span
                     className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"

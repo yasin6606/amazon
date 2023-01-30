@@ -47,7 +47,8 @@ export type TopFooterMenuItem = {
 export type ImagesHero = {
     src: string,
     className: string,
-    alt: string
+    alt: string,
+    order: number
 }
 
 type HomeCartImgList = {
