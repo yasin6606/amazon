@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/227.f558699f.chunk.js","mappings":"6IAQA,UANiB,WACb,OAAO","sources":["Pages/Misc/404/404.tsx"],"sourcesContent":["import React from \"react\";\r\n\r\nconst NotFound = (): JSX.Element => {\r\n    return <>\r\n        not found\r\n    </>;\r\n};\r\n\r\nexport default NotFound;"],"names":[],"sourceRoot":""}
