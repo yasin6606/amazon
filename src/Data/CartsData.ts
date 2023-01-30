@@ -1,34 +1,34 @@
 import {HomeCart} from "Assets/Types/GeneralTypes";
-import A1 from "Assets/Images/HomeCarts/1.jpg";
-import A2 from "Assets/Images/HomeCarts/2.jpg";
-import A3 from "Assets/Images/HomeCarts/3.jpg";
-import A4 from "Assets/Images/HomeCarts/4.jpg";
-import A5 from "Assets/Images/HomeCarts/5.jpg";
-import A6 from "Assets/Images/HomeCarts/6.jpg";
-import A7 from "Assets/Images/HomeCarts/7.jpg";
-import A8 from "Assets/Images/HomeCarts/8.jpg";
-import A9 from "Assets/Images/HomeCarts/9.jpg";
-import A10 from "Assets/Images/HomeCarts/10.jpg";
-import A11 from "Assets/Images/HomeCarts/11.jpg";
-import A12 from "Assets/Images/HomeCarts/12.jpg";
-// import A13 from "Assets/Images/HomeCarts/13.jpg";
-import A14 from "Assets/Images/HomeCarts/14.jpg";
-import A15 from "Assets/Images/HomeCarts/15.jpg";
-import A16 from "Assets/Images/HomeCarts/16.jpg";
-import A17 from "Assets/Images/HomeCarts/17.jpg";
-import A18 from "Assets/Images/HomeCarts/18.jpg";
-import A19 from "Assets/Images/HomeCarts/19.jpg";
-import A20 from "Assets/Images/HomeCarts/20.jpg";
-import A21 from "Assets/Images/HomeCarts/21.jpg";
-import A22 from "Assets/Images/HomeCarts/22.jpg";
-import A23 from "Assets/Images/HomeCarts/23.jpg";
-import A24 from "Assets/Images/HomeCarts/24.jpg";
-import A25 from "Assets/Images/HomeCarts/25.jpg";
-import A26 from "Assets/Images/HomeCarts/26.jpg";
-import A27 from "Assets/Images/HomeCarts/27.jpg";
-import A28 from "Assets/Images/HomeCarts/28.jpg";
-import A29 from "Assets/Images/HomeCarts/29.jpg";
-import A30 from "Assets/Images/HomeCarts/30.jpg";
+import Card1 from "Assets/Images/HomeCarts/1.jpg";
+import Card2 from "Assets/Images/HomeCarts/2.jpg";
+import Card3 from "Assets/Images/HomeCarts/3.jpg";
+import Card4 from "Assets/Images/HomeCarts/4.jpg";
+import Card5 from "Assets/Images/HomeCarts/5.jpg";
+import Card6 from "Assets/Images/HomeCarts/6.jpg";
+import Card7 from "Assets/Images/HomeCarts/7.jpg";
+import Card8 from "Assets/Images/HomeCarts/8.jpg";
+import Card9 from "Assets/Images/HomeCarts/9.jpg";
+import Card10 from "Assets/Images/HomeCarts/10.jpg";
+import Card11 from "Assets/Images/HomeCarts/11.jpg";
+import Card12 from "Assets/Images/HomeCarts/12.jpg";
+import Card13 from "Assets/Images/HomeCarts/13.jpg";
+import Card14 from "Assets/Images/HomeCarts/14.jpg";
+import Card15 from "Assets/Images/HomeCarts/15.jpg";
+import Card16 from "Assets/Images/HomeCarts/16.jpg";
+import Card17 from "Assets/Images/HomeCarts/17.jpg";
+import Card18 from "Assets/Images/HomeCarts/18.jpg";
+import Card19 from "Assets/Images/HomeCarts/19.jpg";
+import Card20 from "Assets/Images/HomeCarts/20.jpg";
+import Card21 from "Assets/Images/HomeCarts/21.jpg";
+import Card22 from "Assets/Images/HomeCarts/22.jpg";
+import Card23 from "Assets/Images/HomeCarts/23.jpg";
+import Card24 from "Assets/Images/HomeCarts/24.jpg";
+import Card25 from "Assets/Images/HomeCarts/25.jpg";
+import Card26 from "Assets/Images/HomeCarts/26.jpg";
+import Card27 from "Assets/Images/HomeCarts/27.jpg";
+import Card28 from "Assets/Images/HomeCarts/28.jpg";
+import Card29 from "Assets/Images/HomeCarts/29.jpg";
+import Card30 from "Assets/Images/HomeCarts/30.jpg";
 
 export const cartsData: HomeCart[] = [
     {
@@ -37,25 +37,25 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A1,
+                src: Card1,
                 alt: "",
                 link: "dining"
             },
             {
                 key: 1,
-                src: A2,
+                src: Card2,
                 alt: "",
                 link: "home"
             },
             {
                 key: 2,
-                src: A3,
+                src: Card3,
                 alt: "",
                 link: "kitchen"
             },
             {
                 key: 3,
-                src: A4,
+                src: Card4,
                 alt: "",
                 link: "health and beauty"
             },
@@ -68,7 +68,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A5,
+                src: Card5,
                 alt: ""
             }
         ],
@@ -80,25 +80,25 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A6,
+                src: Card6,
                 alt: "",
                 link: "headphones"
             },
             {
                 key: 1,
-                src: A7,
+                src: Card7,
                 alt: "",
                 link: "keyboards"
             },
             {
                 key: 2,
-                src: A8,
+                src: Card8,
                 alt: "",
                 link: "computer mice"
             },
             {
                 key: 3,
-                src: A9,
+                src: Card9,
                 alt: "",
                 link: "chairs"
             }
@@ -108,7 +108,14 @@ export const cartsData: HomeCart[] = [
     {
         key: 3,
         header: "health & personal care",
-        imgList: [],
+        imgList: [
+            {
+                key: 0,
+                src: Card13,
+                alt: "",
+                link: "ship"
+            }
+        ],
         link: "see more"
     },
     {
@@ -117,25 +124,25 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A10,
+                src: Card10,
                 alt: "",
                 link: "dining"
             },
             {
                 key: 1,
-                src: A11,
+                src: Card11,
                 alt: "",
                 link: "home"
             },
             {
                 key: 2,
-                src: A12,
+                src: Card12,
                 alt: "",
                 link: "kitchen"
             },
             {
                 key: 3,
-                src: A12,
+                src: Card12,
                 alt: "",
                 link: "health and beauty"
             },
@@ -148,7 +155,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A14,
+                src: Card14,
                 alt: ""
             }
         ],
@@ -160,7 +167,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A15,
+                src: Card15,
                 alt: ""
             }
         ],
@@ -172,7 +179,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A16,
+                src: Card16,
                 alt: ""
             }
         ],
@@ -184,7 +191,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A17,
+                src: Card17,
                 alt: ""
             }
         ],
@@ -196,7 +203,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A18,
+                src: Card18,
                 alt: ""
             }
         ],
@@ -208,7 +215,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A19,
+                src: Card19,
                 alt: ""
             }
         ],
@@ -220,7 +227,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A20,
+                src: Card20,
                 alt: ""
             }
         ],
@@ -232,7 +239,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A21,
+                src: Card21,
                 alt: ""
             }
         ],
@@ -244,7 +251,7 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A22,
+                src: Card22,
                 alt: ""
             }
         ],
@@ -256,25 +263,25 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A23,
+                src: Card23,
                 alt: "",
                 link: "apparel"
             },
             {
                 key: 1,
-                src: A24,
+                src: Card24,
                 alt: "",
                 link: "hats"
             },
             {
                 key: 2,
-                src: A25,
+                src: Card25,
                 alt: "",
                 link: "action figures"
             },
             {
                 key: 3,
-                src: A26,
+                src: Card26,
                 alt: "",
                 link: "mugs"
             }
@@ -287,25 +294,25 @@ export const cartsData: HomeCart[] = [
         imgList: [
             {
                 key: 0,
-                src: A27,
+                src: Card27,
                 alt: "",
                 link: "decor"
             },
             {
                 key: 1,
-                src: A28,
+                src: Card28,
                 alt: "",
                 link: "kitchen"
             },
             {
                 key: 2,
-                src: A29,
+                src: Card29,
                 alt: "",
                 link: "entertaining"
             },
             {
                 key: 3,
-                src: A30,
+                src: Card30,
                 alt: "",
                 link: "bedding & bath"
             }

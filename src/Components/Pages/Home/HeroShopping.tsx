@@ -1,10 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {ImagesHero} from "Assets/Types/GeneralTypes";
-import FirstImg from "Assets/Images/HeroPart/first.jpg";
-import SecondImg from "Assets/Images/HeroPart/second.jpg";
-import ThirdImg from "Assets/Images/HeroPart/third.jpg";
-import FourthImg from "Assets/Images/HeroPart/fourth.jpg";
-import FifthImg from "Assets/Images/HeroPart/fifth.jpg";
+import {imagesList} from "Data/HeroShoppingData";
 
 const HeroShopping = (): JSX.Element => {
 
@@ -32,40 +28,11 @@ const HeroShopping = (): JSX.Element => {
     };
 
     useEffect(() => {
-        const imagesList: ImagesHero[] = [
-            {
-                src: FirstImg,
-                className: "absolute block w-full",
-                alt: "",
-                order: 0
-            },
-            {
-                src: SecondImg,
-                className: "absolute block w-full",
-                alt: "",
-                order: 1
-            },
-            {
-                src: ThirdImg,
-                className: "absolute block w-full",
-                alt: "",
-                order: 2
-            },
-            {
-                src: FourthImg,
-                className: "absolute block w-full",
-                alt: "",
-                order: 3
-            },
-            {
-                src: FifthImg,
-                className: "absolute block w-full",
-                alt: "",
-                order: 4
-            }
-        ];
-
         setImgList(imagesList);
+
+        return () => {
+            setImgList([]);
+        }
     }, []);
 
     return <>
