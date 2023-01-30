@@ -11,7 +11,7 @@ import A9 from "Assets/Images/HomeCarts/9.jpg";
 import A10 from "Assets/Images/HomeCarts/10.jpg";
 import A11 from "Assets/Images/HomeCarts/11.jpg";
 import A12 from "Assets/Images/HomeCarts/12.jpg";
-import A13 from "Assets/Images/HomeCarts/13.jpg";
+// import A13 from "Assets/Images/HomeCarts/13.jpg";
 import A14 from "Assets/Images/HomeCarts/14.jpg";
 import A15 from "Assets/Images/HomeCarts/15.jpg";
 import A16 from "Assets/Images/HomeCarts/16.jpg";
@@ -67,7 +67,7 @@ export const cartsData: HomeCart[] = [
         header: "next your inspiration",
         imgList: [
             {
-                key: 1,
+                key: 0,
                 src: A5,
                 alt: ""
             }
@@ -292,19 +292,19 @@ export const cartsData: HomeCart[] = [
                 link: "decor"
             },
             {
-                key: 0,
+                key: 1,
                 src: A28,
                 alt: "",
                 link: "kitchen"
             },
             {
-                key: 0,
+                key: 2,
                 src: A29,
                 alt: "",
                 link: "entertaining"
             },
             {
-                key: 0,
+                key: 3,
                 src: A30,
                 alt: "",
                 link: "bedding & bath"
