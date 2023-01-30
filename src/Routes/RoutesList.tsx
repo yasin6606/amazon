@@ -7,7 +7,7 @@ const Home = lazy(() => import("Pages/Home/Home"));
 const RoutesList: RouteInterface[] = [
     {
         // Main Page
-        path: "/",
+        path: process.env.PUBLIC_URL + "/",
         element: <Main/>,
         redirect: "/",
         caseSensitive: false,
@@ -22,7 +22,7 @@ const RoutesList: RouteInterface[] = [
     },
     {
         // Not Found Page 404
-        path: "*",
+        path: process.env.PUBLIC_URL + "*",
         element: lazy(() => import("Pages/Misc/404/404")),
         redirect: "/",
         caseSensitive: false,
