@@ -89,13 +89,13 @@ export const topFooterMenuItems: TopFooterMenuItem[] = [
                 link: ""
             },
             {
-                key: 11,
+                key: 13,
                 topic: Topic.b,
                 content: "host an amazon hub",
                 link: ""
             },
             {
-                key: 11,
+                key: 14,
                 topic: Topic.b,
                 content: "see more make money with us",
                 link: ""
@@ -106,25 +106,25 @@ export const topFooterMenuItems: TopFooterMenuItem[] = [
         topic: Topic.c,
         subMenu: [
             {
-                key: 13,
+                key: 15,
                 topic: Topic.c,
                 content: "amazon business card",
                 link: ""
             },
             {
-                key: 14,
+                key: 16,
                 topic: Topic.c,
                 content: "shop with points",
                 link: ""
             },
             {
-                key: 15,
+                key: 17,
                 topic: Topic.c,
                 content: "reload your balance",
                 link: ""
             },
             {
-                key: 16,
+                key: 18,
                 topic: Topic.c,
                 content: "amazon currency convertor",
                 link: ""
@@ -135,49 +135,49 @@ export const topFooterMenuItems: TopFooterMenuItem[] = [
         topic: Topic.d,
         subMenu: [
             {
-                key: 17,
+                key: 19,
                 topic: Topic.d,
                 content: "amazon and COVID-19",
                 link: ""
             },
             {
-                key: 18,
+                key: 20,
                 topic: Topic.d,
                 content: "your account",
                 link: ""
             },
             {
-                key: 19,
+                key: 21,
                 topic: Topic.d,
                 content: "your orders",
                 link: ""
             },
             {
-                key: 20,
+                key: 22,
                 topic: Topic.d,
                 content: "shipping rates & polices",
                 link: ""
             },
             {
-                key: 21,
+                key: 23,
                 topic: Topic.d,
                 content: "returns & replacements",
                 link: ""
             },
             {
-                key: 22,
+                key: 24,
                 topic: Topic.d,
                 content: "manage your content and devices",
                 link: ""
             },
             {
-                key: 23,
+                key: 25,
                 topic: Topic.d,
                 content: "amazon assistant",
                 link: ""
             },
             {
-                key: 22,
+                key: 26,
                 topic: Topic.d,
                 content: "help",
                 link: ""
