@@ -5,7 +5,7 @@ import Loading from "Pages/Misc/Loading/Loading";
 
 const RoutesSwitch: FunctionComponent<any> = (props: { routesList: RouteInterface[] }): JSX.Element => {
 
-    const routes: RouteObject[] | any[] = props.routesList.map(eachRoute => ({...eachRoute}));
+    const routes: RouteObject[] = props.routesList.map(eachRoute => ({...eachRoute}));
 
     const route = useRoutes(routes);
 

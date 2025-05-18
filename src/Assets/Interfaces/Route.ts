@@ -1,5 +1,6 @@
 export default interface RouteInterface {
-    index?: boolean
+    index?: any
+    // index?: false
     path?: string
     element: any
     children?: RouteInterface[]
