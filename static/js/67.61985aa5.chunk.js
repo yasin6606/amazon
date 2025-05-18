@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkamazon_react=self.webpackChunkamazon_react||[]).push([[67],{67:(a,e,n)=>{n.r(e),n.d(e,{default:()=>c});n(5043);var t=n(579);const c=()=>(0,t.jsx)(t.Fragment,{children:"not found"})}}]);
+//# sourceMappingURL=67.61985aa5.chunk.js.map
